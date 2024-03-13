@@ -63,7 +63,9 @@ class _HomeState extends State<Home> {
                 child: Container(height: double.infinity,
                   margin: EdgeInsets.only(top: 5,right: 5,bottom: 5),
                   color:Colors.white,
-                  child: Icon(Icons.add,size: 50,),
+                  child: IconButton(icon:Icon(Icons.add),onPressed: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Menue()));
+                  },iconSize: 50,)
                   ),
                   
                   ),

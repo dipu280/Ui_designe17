@@ -27,7 +27,8 @@ class _MenueState extends State<Menue> {
            ListTile(
               title: Text("FINTIMES",style: myStyle(22, Colors.black,FontWeight.w500),),
               trailing: IconButton(onPressed: (){
-                }, icon: Icon(Icons.menu)),
+       Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Home()));
+          }, icon: Icon(Icons.menu)),
             ),
             SizedBox(height:20),
                   Expanded(
